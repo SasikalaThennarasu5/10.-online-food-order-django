@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="text-center mb-4">
+  <h1>Welcome to Foodie</h1>
+  <p class="lead">Delicious meals delivered fast from "Sunrise Kitchen" — our featured restaurant.</p>
+  <a href="/menu/" class="btn btn-lg btn-outline-primary">View Full Menu</a>
+</div>
+
+<h3 class="mb-3">Featured items</h3>
+<div class="row">
+  {% for item in featured %}
+  <div class="col-md-4 mb-3">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <p class="card-text">{{ item.description|truncatechars:80 }}</p>
+        <p class="fw-bold">₹{{ item.price }}</p>
+        <a href="/add-to-cart/{{ item.id }}/" class="btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  {% empty %}
+  <p>No featured items yet. Load sample data using fixtures.</p>
+  {% endfor %}
+</div>
+{% endblock %}

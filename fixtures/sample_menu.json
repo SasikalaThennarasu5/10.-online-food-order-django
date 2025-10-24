@@ -1,0 +1,98 @@
+[
+  {
+    "model": "orders.category",
+    "pk": 1,
+    "fields": {
+      "name": "Starters",
+      "slug": "starters"
+    }
+  },
+  {
+    "model": "orders.category",
+    "pk": 2,
+    "fields": {
+      "name": "Main Course",
+      "slug": "main-course"
+    }
+  },
+  {
+    "model": "orders.category",
+    "pk": 3,
+    "fields": {
+      "name": "Beverages",
+      "slug": "beverages"
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 1,
+    "fields": {
+      "name": "Paneer Tikka",
+      "description": "Grilled cottage cheese with spices.",
+      "price": "249.00",
+      "image": "https://picsum.photos/seed/starter/400/300",
+      "category": 1,
+      "is_featured": true
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 2,
+    "fields": {
+      "name": "Butter Chicken",
+      "description": "Creamy tomato-based curry with tender chicken.",
+      "price": "349.00",
+      "image": "https://picsum.photos/seed/pizza/400/300",
+      "category": 2,
+      "is_featured": true
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 3,
+    "fields": {
+      "name": "Veg Biryani",
+      "description": "Fragrant basmati rice cooked with vegetables.",
+      "price": "199.00",
+      "image": "https://picsum.photos/seed/burger/400/300",
+      "category": 2,
+      "is_featured": false
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 4,
+    "fields": {
+      "name": "Masala Fries",
+      "description": "Crispy fries tossed with masala.",
+      "price": "119.00",
+      "image": "https://picsum.photos/seed/pasta/400/300",
+      "category": 1,
+      "is_featured": false
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 5,
+    "fields": {
+      "name": "Mango Lassi",
+      "description": "Refreshing mango yogurt drink.",
+      "price": "89.00",
+      "image": "https://picsum.photos/seed/dessert/400/300",
+      "category": 3,
+      "is_featured": true
+    }
+  },
+  {
+    "model": "orders.menuitem",
+    "pk": 6,
+    "fields": {
+      "name": "Garlic Naan",
+      "description": "Freshly baked naan with garlic.",
+      "price": "49.00",
+      "image": "https://picsum.photos/seed/mojito/400/300",
+      "category": 2,
+      "is_featured": false
+    }
+  }
+]

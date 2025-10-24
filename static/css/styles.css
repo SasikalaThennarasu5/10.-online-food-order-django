@@ -1,0 +1,5 @@
+/* Custom styles for Foodie */
+body { background: #f7fafc; }
+.navbar-brand { font-weight: 700; }
+footer { opacity: 0.95; }
+.card { border-radius: 12px; box-shadow: 0 6px 18px rgba(20,20,40,0.05); }
